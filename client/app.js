@@ -1,6 +1,7 @@
 $(function() {
   
-  var host = location.origin.replace(/^http/, 'ws');  
+  var host = location.origin.replace(/^http/, 'ws') + '/binary-endpoint';
+  
   var client = new BinaryClient(host);
 
   var soundController = {};
